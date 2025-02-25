@@ -1,0 +1,258 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: rgb(43, 41, 41);
+    padding: 8px;
+    justify-items: center;
+}
+.logo{
+    height: 90px;
+    width: 120px;
+    position: absolute;
+    top: -1%;
+    left: 1%;
+}
+body{
+    background-color: #333;
+top: 10px;
+}
+
+.he {
+    color: aliceblue;
+    margin-top: 5px;
+    display: flex;
+    transition: 0.2;
+}
+
+.he:hover {
+    transform: scale(1.1);
+    color: antiquewhite;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 10px; 
+    list-style: none;
+    justify-content: flex-start;
+}
+
+/* Navigation Links */
+.b, .c, .d, .e {
+    color: aliceblue;
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    top: 28px;
+    transition: 0.2;
+}
+
+.b {
+    right: 350px;
+}
+
+.c {
+    right: 230px;
+}
+
+.d {
+    right: 140px;
+}
+
+.e {
+    right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    transform: scale(1.2);
+    color: rgb(224, 46, 33);
+}
+
+/* Section */
+.a-section {
+    background-color: rgb(175, 161, 161);
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.a-header {
+    background-color: rgb(22, 21, 21);
+    color: aliceblue;
+    padding: 1em;
+    text-align: center;
+}
+
+.a-content {
+    padding: 2em;
+}
+
+.a-content p {
+    margin-bottom: 20px;
+}
+
+.a-content img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Social Media Links */
+.hi {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hi li {
+    margin-right: 20px;
+}
+
+.hi a {
+    color: #0f0c0c;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Aligns icon with text */
+}
+
+.hi li img {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 282px;
+    margin-left: 10px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+    transform: translateY(6px);
+}
+
+.hi li a:hover {
+    color: #0073e6;
+}
+
+/* Hover Effect for Icons */
+.hi li a:hover img {
+    transform: scale(1.2) translateY(4px);
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .b, .c, .d, .e {
+        position: relative;
+        right: auto;
+        top: auto;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust section padding */
+    .a-section {
+        padding: 1.5em;
+    }
+
+    /* Adjust image size for mobile */
+    .a-content img {
+        width: 80px;
+        height: auto;
+    
+    }
+
+    /* Social media links for mobile */
+    .hi {
+        flex-direction: colmn;
+        align-items: center;
+    }
+
+    .hi li {
+        margin-bottom: 10px;
+    }
+
+    .hi li a {
+        font-size: 20px;
+    }
+
+    .hi li img {
+        top: 480px;
+        transform: translateY(1.1);
+    }
+    
+    
+}
+
+/* Tablet (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust the navigation layout */
+    nav ul {
+        gap: 15px;
+    }
+
+    .b, .c, .d, .e {
+        position: relative;
+        right: auto;
+        top: auto;
+    }
+
+    .a-header h1 {
+        font-size: 28px;
+    }
+
+    /* Adjust image size for tablets */
+    .a-content img {
+        width: 90px;
+        height: auto;
+    }
+
+    .hi li a {
+        font-size: 20px;
+    }
+
+    .hi li img {
+        top: 285px;
+    }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .a-header h1 {
+        font-size: 32px;
+    }
+
+    /* Adjust image size for desktop */
+    .a-content img {
+        width: 100px;
+    }
+
+    .hi li a {
+        font-size: 22px;
+    }
+
+    /* Restore horizontal layout for social media icons */
+    .hi {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .hi li {
+        margin-right: 20px;
+    }
+
+    .hi li img {
+        top: 290px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+</head>
+<link rel="stylesheet" href="sty.css">
+<body>
+    <div class="d1">
+        <div class="d2">
+            <h1>LOGIN FORM</h1>
+            <div class="d3">
+            <input class="hi" type="text" placeholder="Enter name" method="get" id="haiyyy">
+            <input class="hi1" type="password" placeholder="Password" method="get" id="haiyy">
+            <button class="btn" onclick="myFunction()">submit</button>
+        
+        </div>
+</div>
+</div>
+  <script>
+    function myFunction(){
+      const name = "Asif"
+      const password = "12481"
+      const asp = document.getElementById("haiyyy").value;
+      const asikh = document.getElementById("haiyy").value;
+      if(name === asp && password === asikh){
+        window.location.href="main.html";
+      }
+      else if(asp==="" || asikh===""){
+        alert("please fill the information.");
+        
+      }
+      else{
+        alert("invalid input.");
+      }
+       
+    }
+  </script>
+</body>
+</html>

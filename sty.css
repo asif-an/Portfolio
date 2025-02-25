@@ -1,0 +1,200 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.d1 {
+    background: linear-gradient(30deg,#ec2a2a,#6045c0);
+    height: 100vh;
+    width: 100vw; 
+}
+
+
+.d2 {
+    height: 440px;
+    width: 300px;
+    padding: 20px;
+    padding-left: 110px;
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    transform: translateX(-50%); 
+    border-radius: 24px;
+    box-shadow: 7px 5px 20px black;
+    transition: transform 0.3s;
+}
+
+
+.hi, .hi1 {
+    position: absolute;
+    width: 230px;
+    height: 27px;
+    border-radius: 15px;
+    padding-left: 5%;
+}
+
+
+.hi {
+    top: 40%;
+    left: 20%;
+}
+
+
+.hi1 {
+    top: 48%;
+    left: 20%;
+}
+
+
+.btn {
+    color: aliceblue;
+    background-color: rgb(19, 22, 26);
+    position: absolute;
+    top: 59%;
+    left: 40%;
+    height: 27px;
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn:hover {
+    transform: scale(1.1);
+    color: black;
+    background-color: rgba(244, 248, 250, 0.925);
+}
+
+.btn:hover:active {
+    background-color: rgb(148, 201, 138);
+    color: rgb(79, 154, 219);
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Adjust Content Box */
+    .d2 {
+        width: 90%; /* Make it take up more space on smaller screens */
+        padding-left: 10px; /* Decrease the left padding */
+        top: 50px; /* Position it higher */
+        left: 5%; /* Center it but make sure it's not too far right */
+    }
+
+    /* Input fields */
+    .hi, .hi1 {
+        width: 90%; /* Make input fields wider */
+        left: 5%; /* Center the inputs */
+    }
+
+    /* Button */
+    .btn {
+        width: 70px; /* Increase button width */
+        left: 50%; /* Center the button */
+        transform: translateX(-50%); /* Center button properly */
+    }
+}
+
+/* Mobile Devices (max-width: 767px) */
+@media (max-width: 767px) {
+    /* Adjust Content Box */
+    .d2 {
+        width: 85%; /* Make it take up more space on smaller screens */
+        padding-left: 10px; /* Decrease the left padding */
+        top: 50px; /* Position it higher */
+        left: 7%; /* Ensure it's not too far to the right */
+    }
+
+    /* Input fields */
+    .hi, .hi1 {
+        width: 85%; /* Make input fields wider */
+        left: 10%; /* Center the inputs */
+    }
+
+    /* Button */
+    .btn {
+        width: 70px; /* Slightly increase button width */
+        left: 50%; /* Center the button */
+        transform: translateX(-50%); /* Center button properly */
+    }
+}
+
+/* Tablet Devices (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust Content Box */
+    .d2 {
+        width: 70%; /* Reduce the width slightly */
+        top: 90px; /* Position it as before */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Input fields */
+    .hi, .hi1 {
+        width: 70%; /* Slightly reduce input width */
+        left: 15%; /* Align inputs a bit more centered */
+    }
+
+    /* Button */
+    .btn {
+        width: 70px; /* Slightly larger button */
+        left: 50%; /* Center the button */
+        transform: translateX(-50%);
+    }
+}
+
+/* Larger Tablet Devices / Small Laptops (min-width: 1024px and max-width: 1280px) */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    /* Content Box (d2) */
+    .d2 {
+        width: 300px; /* Maintain original size for tablet */
+        left: 50%;
+        top: 90px;
+        transform: translateX(-50%);
+    }
+
+    /* Input fields */
+    .hi, .hi1 {
+        width: 230px; /* Default width for tablets */
+        left: 20%; /* Keep inputs at this position */
+    }
+
+    /* Button */
+    .btn {
+        width: 60px; /* Maintain original button size */
+        left: 40%;
+    }
+}
+
+/* Desktop Devices (min-width: 1280px) */
+@media (min-width: 1280px) {
+    /* Content Box (d2) */
+    .d2 {
+        width: 390px; /* Maintain original size for desktop */
+        left: 50%;
+        top: 90px;
+        transform: translateX(-50%);
+    }
+
+    /* Input fields */
+    .hi, .hi1 {
+        width: 230px; /* Default width for desktop */
+        left: 20%; /* Keep inputs at this position */
+    }
+
+    /* Button */
+    .btn {
+        width: 60px; /* Maintain original button size */
+        left: 40%;
+    }
+}

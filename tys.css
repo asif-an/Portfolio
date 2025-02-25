@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: rgb(7, 4, 4);
+    padding: 8px;
+    justify-items: center;
+}
+
+body {
+    background: linear-gradient(30deg,#ec2a2a,#6045c0);
+  height: 100vh;
+  width: 100%;
+}
+
+h2 {
+    color: aliceblue;
+    margin-top: 5px;
+    display: flex;
+    transition: 0.2s;
+}
+
+h2:hover {
+    transform: scale(1.1);
+    color: antiquewhite;
+}
+
+/* Navigation Links */
+nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+}
+
+.b, .c, .d, .e {
+    color: aliceblue;
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    top: 28px;
+    transition: 0.2s;
+}
+
+.b {
+    right: 350px;
+}
+
+.c {
+    right: 230px;
+}
+
+.d {
+    right: 140px;
+}
+
+.e {
+    right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.b:hover, .c:hover, .d:hover, .e:hover {
+    transform: scale(1.1);
+    color: rgb(226, 30, 16);
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    position: absolute;
+    left: 15%;
+    margin-top: 170px;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.ti {
+    color: white;
+    font-weight: bold;
+    font-size: 55px;
+    
+}
+
+
+/* Content */
+.content h3 {
+    margin-left: 25px;
+}
+
+.l {
+    width: 350px;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    color: rgb(29, 27, 27);
+}
+
+.hi {
+    position: relative;
+}
+
+/* Circle Image */
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    border: 4px solid black;
+    box-shadow: 10px 10px 20px rgb(10, 8, 8);
+    left: 550px;
+    bottom: 0%;
+    top: 10%;
+    transition: 0.4s;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.circle:hover{
+    transform: scale(1.1);
+    
+}
+.logo{
+    height: 90px;
+    width: 120px;
+    position: absolute;
+    top: -1%;
+    left: 1%;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices (max-width: 767px) */
+@media (max-width: 767px) {
+    /* Navigation */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    body{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .b, .c, .d, .e {
+        position: relative;
+        right: auto;
+        top: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin-top: 50px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ti {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .l {
+        width: 100%;
+        font-size: 18px;
+        top: 50px;
+        left: 0;
+    }
+
+    .circle {
+        left: 50%;
+        top: 100px;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Tablet Devices (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Navigation */
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .b, .c, .d, .e {
+        position: relative;
+        top: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin-top: 50px;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .ti {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .l {
+        width: 80%;
+        font-size: 20px;
+        top: 50px;
+        left: 10%;
+    }
+
+    .circle {
+        left: 50%;
+        top: 120px;
+        transform: translateX(-50%);
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Desktop Devices (min-width: 1024px) */
+@media (min-width: 1024px) {
+    /* Navigation */
+    nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .hero {
+        display: flex;
+        position: absolute;
+        left: 10%;
+        margin-top: 170px;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .ti {
+        font-size: 55px;
+        color: white;
+         position: absolute;
+         left: 11%;
+         padding: 10px;
+         left: 9%;
+    }
+    .circle{
+        left: 65%;
+        top:10%;
+    }
+    .l{
+        left: 10%;
+        bottom: 70%;
+        color: black;
+    }
+    .k{
+        position: absolute;
+        left: 8%;
+        bottom:20%;
+        font-size: 22px;
+    }
+}
