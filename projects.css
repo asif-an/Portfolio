@@ -145,6 +145,7 @@ nav ul li a {
     nav ul {
         flex-direction: column;
         gap: 10px;
+        top:50px
     }
 
     .b, .c, .d, .e {
