@@ -157,7 +157,7 @@ nav ul li a:hover {
     .b, .c, .d, .e {
         position: relative;
         right: auto;
-        top: auto;
+        top: 28px;
         margin-bottom: 10px;
     }
 
